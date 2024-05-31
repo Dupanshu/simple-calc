@@ -1,24 +1,11 @@
-/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-/*                                                       */
-/*  Andre Specht (2024)                                  */
-/*  github.com/mrspecht                                  */
-/*                                                       */
-/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 'use strict';
-
 // This app requires a server to handle import statements and CORS issues
 import * as utils from './utils.js';
-
-
-/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-/*  Organizer                                            */
-/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 utils.print('Welcome');
 
 const mapHere = document.querySelector('.map-here');
-const numbBtns = document.createElement('div');
 const numbers = [7, 8, 9, 4, 5, 6, 1, 2, 3, 0, '+', '-'];
 
 const mappedNumbers = numbers.map(number => {
