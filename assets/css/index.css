@@ -138,11 +138,11 @@ input[value="C"] {
     outline: none !important;
   }
   
-  .calc::after {
+  .element-calc::after {
     content: '';
     width: 100px;
     height: 5px;
-    background-color: #fff;
+    background-color: transparent !important;
     position: absolute;
     top: 99%;
     left: 50%;
@@ -156,7 +156,7 @@ input[value="C"] {
     width: 100%;
     background-color: transparent;
     border-bottom: none;
-    margin-top: 80%  !important;
+    margin-top: 38dvh !important;
     margin-bottom: 0px;
     padding: 0px 17px 4px 0px;
     text-align: right;
