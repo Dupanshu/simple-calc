@@ -136,6 +136,9 @@ input[value="C"] {
     width: 100%;
     border-radius: 14px;
     outline: none !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
   }
   
   .element-calc::after {
@@ -156,7 +159,6 @@ input[value="C"] {
     width: 100%;
     background-color: transparent;
     border-bottom: none;
-    margin-top: 38dvh !important;
     margin-bottom: 0px;
     padding: 0px 17px 4px 0px;
     text-align: right;
