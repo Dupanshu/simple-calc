@@ -9,9 +9,9 @@ body {
 
 .calc {
   width: 400px;
-  height: 100dvh;
+  height: 650px;
   position: relative;
-  margin-inline: auto;
+  margin: auto;
 }
 
 .element-calc {
@@ -19,15 +19,20 @@ body {
   padding: 17px;
   height: 100%;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-radius: 14px;
+  outline: 2px solid #555;
 }
 
-.calc::after {
+.element-calc::after {
   content: '';
   width: 100px;
   height: 5px;
   background-color: #fff;
   position: absolute;
-  top: 98dvh;
+  top: 99%;
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 50px;
@@ -37,8 +42,8 @@ body {
   display: block;
   width: 100%;
   background-color: transparent;
+  margin-top: 95px;
   border-bottom: none;
-  margin-top: 20dvh;
   margin-bottom: 0px;
   padding: 0px 17px 4px 0px;
   text-align: right;
@@ -113,12 +118,52 @@ input[value="C"] {
     margin-top: 5px;
   }
 
+  body {
+    background-color: var(--background-color);
+  }
+  
   .calc {
     width: 100vw;
+    height: 100dvh;
+    position: relative;
+    margin-inline: auto;
   }
-
+  
+  .element-calc {
+    background-color: #000;
+    padding: 17px;
+    height: 100%;
+    width: 100%;
+    border-radius: 14px;
+    outline: none !important;
+  }
+  
   .calc::after {
+    content: '';
+    width: 100px;
+    height: 5px;
+    background-color: #fff;
+    position: absolute;
+    top: 99%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50px;
     display: none;
+  }
+  
+  .element-calc .above-display {
+    display: block;
+    width: 100%;
+    background-color: transparent;
+    border-bottom: none;
+    margin-top: 80%  !important;
+    margin-bottom: 0px;
+    padding: 0px 17px 4px 0px;
+    text-align: right;
+    font-size: 30px;
+    font-weight: 600;
+    color: rgba(255 255 255 / 50%);
+    cursor: normal;
   }
 }
 
